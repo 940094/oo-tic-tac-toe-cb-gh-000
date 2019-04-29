@@ -117,7 +117,7 @@ class TicTacToe
     end
   end
 
-  def play(board)
+  def play
     until over?(board) # until the game is over
       turn(board) # take turns
     end
