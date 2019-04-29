@@ -131,6 +131,7 @@ class TicTacToe
       return
     elsif draw?() # else if the game was a draw
       puts "Cat's Game!"  # tell the players its a draw
+      return
     end
   end
 
