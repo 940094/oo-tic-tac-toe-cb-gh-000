@@ -105,7 +105,7 @@ class TicTacToe
   end
 
   def over?  # returns TRUE if @board is won or a draw or full
-    if won?(@board) || full?(@board) || draw?(@board)
+    if won?() || full?() || draw?()
       return true
     else
       return false
@@ -113,7 +113,7 @@ class TicTacToe
   end
 
   def winner  # returns the winner of the game if there is a winner (trigger via won?)
-    winning_array = won?(@board)
+    winning_array = won?()
     if winning_array != false
       return @board[winning_array[0]]
     else
@@ -122,13 +122,13 @@ class TicTacToe
   end
 
   def play
-    until over?(@board) # until the game is over
-      turn(@board) # take turns
+    until over?() # until the game is over
+      turn() # take turns
     end
 
-    if won?(@board)  # if the game is won
+    if won?()  # if the game is won
       puts "Congratulations #{winner(@board)}!"# congratulate the winner
-    elsif draw?(@board) # else if the game was a draw
+    elsif draw?() # else if the game was a draw
       puts "Cat's Game!"  # tell the players its a draw
     end
   end
