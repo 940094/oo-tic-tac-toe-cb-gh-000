@@ -128,6 +128,7 @@ class TicTacToe
 
     if won?()  # if the game is won
       puts "Congratulations #{winner(@board)}!"# congratulate the winner
+      return
     elsif draw?() # else if the game was a draw
       puts "Cat's Game!"  # tell the players its a draw
     end
