@@ -71,7 +71,7 @@ class TicTacToe
     end
   end
 
-  def won?(board)  # return false if no winning combo; return winning combination index if there is a win
+  def won? # return false if no winning combo; return winning combination index if there is a win
     WIN_COMBINATIONS.each do |win_combinations| # for each winning_combination
       win_combinations
        index_0 = board[win_combinations[0]]  # index 0
