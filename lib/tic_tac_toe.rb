@@ -89,7 +89,7 @@ class TicTacToe
     !board.include?(" ")
   end
 
-  def draw?(board)
+  def draw?
     full = full?(board)
     won = won?(board)
     if full && !won  # not been won but is full => true
